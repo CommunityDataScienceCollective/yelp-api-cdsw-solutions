@@ -1,3 +1,12 @@
+# Answer to Challenge 1: Change your search in some way described in the API
+# documentation (e.g., use a category filter) 
+#
+# I've changed this to print ice cream places in Seattle using the category
+# filter. I used the term "icecream" which I found documented on this page in
+# the API documentation:
+#
+# https://www.yelp.com/developers/documentation/v2/all_category_list
+
 from yelpapi import YelpAPI
 from yelp_authentication import CONSUMER_KEY, CONSUMER_SECRET, TOKEN, TOKEN_SECRET
 
@@ -7,9 +16,9 @@ yelp_api = YelpAPI(CONSUMER_KEY, CONSUMER_SECRET, TOKEN, TOKEN_SECRET)
 # http://www.yelp.com/developers/documentation/v2/search_api for
 # the various options available.
 
-print('***** 5 best rated ice cream places in Austin, TX *****')
+print('***** 5 best rated ice cream places in Seattle, WA *****')
 
-response = yelp_api.search_query(term='ice cream', location='austin, tx', sort=2, limit=5)
+response = yelp_api.search_query(category_filter='icecream', location='seattle, wa', sort=2, limit=5)
 
 print('region center (lat,long): {},{}\n'.format(response['region']['center']['latitude'], response['region']['center']['longitude']))
 
