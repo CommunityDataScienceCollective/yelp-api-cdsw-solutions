@@ -1,9 +1,9 @@
 ## Challenge Questions
 
-1. Search in a different places (your home town?)
+1. Search in different places (your home town?)
 2. Change your search in some way described in the API documentation (e.g., use
    a category filter)
-3. Instead of rating information, print out phone numbers... but what we will
+3. Instead of rating information, print out phone numbers... but what will we
    do if we don't have phone numbers?
 4. Open a file and save the answers to a file instead of just printing them
    out.
