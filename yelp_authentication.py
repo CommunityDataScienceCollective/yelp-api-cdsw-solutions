@@ -1,4 +1,4 @@
-CONSUMER_KEY = 'CHANGE_ME'
-CONSUMER_SECRET = 'CHANGE_ME'
-TOKEN = 'CHANGE_ME'
-TOKEN_SECRET = 'CHANGE_ME'
+# Change APIKey to the API key you created on Yelp Create Apps.  Keep this
+# file private.
+
+APIKey = "<change me>"
